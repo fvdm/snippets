@@ -41,7 +41,11 @@ The value of the cookie
 **expires** _(optional)_
 The number of seconds till cookie expires, _defaults to one week_
 
-	var foo = setCookie( 'foo', '
+	var foo = setCookie( 'foo', 'bar', 86400 );
+	// foo.name
+	// foo.value
+	// foo.expires
+	// foo.unixtime
 
 
 setCookie( object )
