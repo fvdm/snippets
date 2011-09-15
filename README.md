@@ -7,7 +7,7 @@ getCookie( name )
 Get one specific cookie
 
 **name** _(optional)_
-The name of the cookie you're looking for. Leave out to return all cookies.
+The name of the cookie you're looking for.
 
 	// foo = bar
 	var foo = getCookie('foo');
