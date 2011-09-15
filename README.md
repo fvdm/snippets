@@ -19,11 +19,8 @@ getCookie()
 Get all cookies
 
 	var cookies = getCookie();
-	$.each( cookies, function( c ) {
-		// c.name
-		// c.value
-		// c.expires
-		// c.unixtime
+	$.each( cookies, function( name, value ) {
+		// name = value
 	});
 
 
