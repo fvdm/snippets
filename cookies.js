@@ -27,16 +27,15 @@ function setCookie( name, value, addSeconds )
 	if( typeof(name) == 'object' )
 	{
 		// yes, walk through
-		$.each( name, function( i, c )
+		for( var c in name )
 		{
-			c['unixtime'] = jsDate.getUTCDate();
-			c['unixtime'] += isNaN(c.expires) ? defaultSeconds : c.expires;
+			name[c]['unixtime'] = jsDate.getUTCDate();
+			name[c]['unixtime'] += isNaN(name[c].expires) ? defaultSeconds : name[c].expires;
 			
-			var theDate = jsDate.setUTCDate( c.unixtime );
-			c.expires = jsDate.toUTCString();
+			var theDate = jsDate.setUTCDate( name[c].unixtime );
+			name[c]['expires'] = jsDate.toUTCString();
 			
-			document.cookie = c.name +'='+ c.value +';expires='+ c.expires;
-			name[i] = c;
+			document.cookie = name[c].name +'='+ name[c].value +';expires='+ name[c].expires;
 		});
 		
 		return name;

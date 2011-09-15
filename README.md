@@ -1,4 +1,4 @@
-jQuery functions
+Javascript functions
 ================
 
 getCookie( name )
@@ -19,9 +19,9 @@ getCookie()
 Get all cookies
 
 	var cookies = getCookie();
-	$.each( cookies, function( name, value ) {
-		// name = value
-	});
+	for( var name in cookies ) {
+		// cookies[name] = value
+	}
 
 
 setCookie( name, value [, expires] )
@@ -54,7 +54,7 @@ Set multiple cookies
 The object with cookies:
 
 	var cookies = [
-		{name: 'foo', value: 'bar'},
+		'foo' : 'bar',
 		{name: 'hello', value: 'world', 86400}
 	];
 	setCookie( cookies );
