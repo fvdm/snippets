@@ -1,5 +1,5 @@
-jQuery plugins
-==============
+jQuery functions
+================
 
 getCookie( name )
 -----------------
