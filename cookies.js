@@ -19,7 +19,9 @@ function getCookie( name )
 function setCookie( name, value, addSeconds )
 {
 	var jsDate = new Date();
-	var defaultSeconds = 3600*24*7;		// default expire seconds (1 week)
+	
+	// default expire seconds (1 week)
+	var defaultSeconds = 3600*24*7;
 	
 	// multiple cookies given?
 	if( typeof(name) == 'object' )
