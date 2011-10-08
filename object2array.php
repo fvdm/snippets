@@ -18,7 +18,7 @@ public function object2array($o)
 	{
 		foreach( $o as $k => $v )
 		{
-			$o[ $k ] = object2array($v) );
+			$o[ $k ] = object2array($v);
 		}
 	}
 	
