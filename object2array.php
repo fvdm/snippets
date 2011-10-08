@@ -14,14 +14,17 @@ public function object2array($o)
 		$o = get_object_vars($o);
 	}
 	
+	# $o is array
 	if( is_array($o) )
 	{
+		# recurse elements
 		foreach( $o as $k => $v )
 		{
 			$o[ $k ] = object2array($v);
 		}
 	}
 	
+	# $o is normal
 	return $o;
 }
 ?>
