@@ -1,4 +1,8 @@
 <?php
+# License: Creative Commons, Attribution 3.0 Unported (CC BY 3.0)
+# Details: http://creativecommons.org/licenses/by/3.0/
+# Source: https://github.com/fvdm/php-snippets/blob/master/object2array.php
+
 # object to array
 public function object2array($o)
 {
