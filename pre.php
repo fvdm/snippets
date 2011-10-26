@@ -1,6 +1,6 @@
 <?php
 // Return any var as string wrapped in <pre> tags
-function pre( $var, $tags=true, $doPrint=false ) {
+function pre( $var, $doTags=true, $doEcho=false ) {
 	ob_start();
 	if( is_object($var) || is_array($var) ) {
 		print_r($var);
@@ -9,9 +9,9 @@ function pre( $var, $tags=true, $doPrint=false ) {
 	}
 	$str = ob_get_contents();
 	ob_end_clean();
-	$str = $tags ? '<pre>'. $str .'</pre>' : $str;
+	$str = $toTags ? '<pre>'. $str .'</pre>' : $str;
 	
-	if( $doPrint ) {
+	if( $doEcho ) {
 		echo $str;
 	}
 	
