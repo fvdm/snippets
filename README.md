@@ -8,6 +8,6 @@ _Find out which keys are missing in an array. $mustHave must be a string with co
 
 _Recursively convert an object to an array_
 
-**pre** ( $var, $tags=true, $doPrint=false )
+**pre** ( $var, $doTtags=true, $doPrint=false )
 
-_Return any $var as dumped string, wrapped in pre $tags. Set $doPrint to dump to browser directly. Useful for debugging._
+_Return any $var as dumped string, wrapped in <pre> tags if $doTags is set. Set $doPrint to dump to browser directly. Useful for debugging._
