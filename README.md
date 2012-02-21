@@ -10,4 +10,4 @@ _Recursively convert an object to an array_
 
 **pre** ( $var, $doTtags=true, $doPrint=false )
 
-_Return any $var as dumped string, wrapped in _pre_ tags if $doTags is set. Set $doPrint to dump to browser directly. Useful for debugging._
+_Return any $var as dumped string, wrapped in pre-tags if $doTags is set. Set $doPrint to dump to browser directly. Useful for debugging._
