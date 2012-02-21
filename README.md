@@ -4,7 +4,7 @@ Here are some PHP snippets I wrote and use regularly. Feel free to use them any 
 
 _Find out which keys are missing in an array. $mustHave must be a string with comma seperated keys to check. Returns an array with missing keys or false when nothing is missing._
 
-**extract_ean13* ( $str )
+**extract_ean13** ( $str )
 
 _Extract and parse EAN-13 and UPC-13 codes from a text. It returns only the valid codes as array._
 
